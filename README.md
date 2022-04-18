@@ -1,5 +1,6 @@
 ## Go Design Pattern
 
 ### Strategy Pattern
-- /strategy
+- example: strategy/
+- usage: strategy/strategy_test.go
 - https://tinkerbellbass.tistory.com/66
