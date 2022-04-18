@@ -1,6 +1,6 @@
 ## Kotlin Design Pattern
 
 ### Strategy Pattern
-- src/main/kotlin/strategy
-- src/test/kotlin/strategyTest.kt
+- example: src/main/kotlin/strategy/
+- usage: src/test/kotlin/StrategyTest.kt
 - https://tinkerbellbass.tistory.com/66
