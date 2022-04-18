@@ -15,8 +15,8 @@ public class StrategyTest {
         final var defaultFee =  amount * Fee.DEFAULT_FEE;
         final var partnershipFee = amount * Fee.PARTNERSHIP_FEE;
 
-        Remit abcBankRemit = new AbcBankRemit(new DefaultFee());
-        Remit defBankRemit = new DefBankRemit(new PartnershipFee());
+        final Remit abcBankRemit = new AbcBankRemit(new DefaultFee());
+        final Remit defBankRemit = new DefBankRemit(new PartnershipFee());
 
         final var amountAbc = abcBankRemit.calculateAmount(amount);
         final var amountDef = defBankRemit.calculateAmount(amount);
