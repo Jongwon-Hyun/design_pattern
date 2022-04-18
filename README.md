@@ -1,1 +1,4 @@
-# java_design_pattern
+## Java Design Pattern
+
+### Strategy Pattern
+- https://tinkerbellbass.tistory.com/66
