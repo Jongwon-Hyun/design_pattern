@@ -1,6 +1,6 @@
 ## Java Design Pattern
 
 ### Strategy Pattern
-- src/main/java/strategy
-- src/test/java/strategy.java
+- example: src/main/java/strategy/
+- usage: src/test/java/StrategyTest.java
 - https://tinkerbellbass.tistory.com/66
