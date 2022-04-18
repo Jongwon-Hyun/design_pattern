@@ -11,15 +11,15 @@ public class StrategyTest {
 
     @Test
     void StrategyRun() {
-        var amount = 1000;
-        var defaultFee =  amount * Fee.DEFAULT_FEE;
-        var partnershipFee = amount * Fee.PARTNERSHIP_FEE;
+        final var amount = 1000;
+        final var defaultFee =  amount * Fee.DEFAULT_FEE;
+        final var partnershipFee = amount * Fee.PARTNERSHIP_FEE;
 
         Remit abcBankRemit = new AbcBankRemit(new DefaultFee());
         Remit defBankRemit = new DefBankRemit(new PartnershipFee());
 
-        var amountAbc = abcBankRemit.calculateAmount(amount);
-        var amountDef = defBankRemit.calculateAmount(amount);
+        final var amountAbc = abcBankRemit.calculateAmount(amount);
+        final var amountDef = defBankRemit.calculateAmount(amount);
 
         assertEquals(amount + defaultFee, amountAbc);
         assertEquals(amount + partnershipFee, amountDef);
