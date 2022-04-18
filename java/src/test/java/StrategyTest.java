@@ -12,8 +12,8 @@ public class StrategyTest {
     @Test
     void StrategyRun() {
         var amount = 1000;
-        var defaultFee =  1000 * Fee.DEFAULT_FEE;
-        var partnershipFee = 1000 * Fee.PARTNERSHIP_FEE;
+        var defaultFee =  amount * Fee.DEFAULT_FEE;
+        var partnershipFee = amount * Fee.PARTNERSHIP_FEE;
 
         Remit abcBankRemit = new AbcBankRemit(new DefaultFee());
         Remit defBankRemit = new DefBankRemit(new PartnershipFee());
