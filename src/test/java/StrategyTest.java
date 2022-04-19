@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class StrategyTest {
 
     @Test
-    void StrategyRun() {
+    void strategyRun() {
         final var amount = 1000;
         final var defaultFee =  amount * Fee.DEFAULT_FEE;
         final var partnershipFee = amount * Fee.PARTNERSHIP_FEE;
