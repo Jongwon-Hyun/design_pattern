@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 public class ObserverTest {
     @Test
     void observerRun() {
-       var messenger = new Messenger();
-       var mailSender = new MailSender();
-       var appAlarmSender = new AppAlarmSender();
+       final var messenger = new Messenger();
+       final var mailSender = new MailSender();
+       final var appAlarmSender = new AppAlarmSender();
 
        messenger.subscribe(mailSender);
        messenger.subscribe(appAlarmSender);
