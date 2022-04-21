@@ -3,14 +3,13 @@ import io.kotest.matchers.shouldBe
 import strategy.AbcBankRemit
 import strategy.DefBankRemit
 import strategy.fee.DefaultFee
-import strategy.fee.Fee
 import strategy.fee.PartnershipFee
 
 class StrategyTest : FunSpec({
     test("strategy run") {
         val amount = 1000.0
-        val defaultFee = amount * Fee.DEFAULT_FEE
-        val partnershipFee = amount * Fee.PARTNERSHIP_FEE
+        val defaultFee = amount * DefaultFee.FEE
+        val partnershipFee = amount * PartnershipFee.FEE
 
         val abcBankRemit = AbcBankRemit(DefaultFee())
         val defBankRemit = DefBankRemit(PartnershipFee())
