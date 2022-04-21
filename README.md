@@ -9,3 +9,8 @@
 - example: src/main/java/observer/
 - usage: src/test/java/ObserverTest.java
 - https://tinkerbellbass.tistory.com/67
+
+### Decorator Pattern
+- example: src/main/java/decorator/
+- usage: src/test/java/DecoratorTest.java
+- https://tinkerbellbass.tistory.com/68
