@@ -9,3 +9,9 @@
 - example: observer/
 - usage: strategy/observer.test.ts
 - https://tinkerbellbass.tistory.com/67
+
+
+### Decorator Pattern
+- example: decorator/
+- usage: decorator/decorator.test.ts
+- https://tinkerbellbass.tistory.com/68

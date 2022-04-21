@@ -1,7 +1,9 @@
-import { Fee, PARTNERSHIP_FEE } from "./fee";
+import { Fee } from "./fee";
 
 export class PartnershipFee implements Fee {
+    static readonly FEE = 0.01
+
     calculate(amount: number): number {
-        return amount * PARTNERSHIP_FEE;
+        return amount * PartnershipFee.FEE;
     }
 }
