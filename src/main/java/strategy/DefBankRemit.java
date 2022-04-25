@@ -2,7 +2,7 @@ package strategy;
 
 import strategy.fee.Fee;
 
-public class DefBankRemit extends Remit{
+public class DefBankRemit extends Remit {
     public DefBankRemit(Fee fee) {
         super(fee);
     }
