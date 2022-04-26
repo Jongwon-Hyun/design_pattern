@@ -14,8 +14,10 @@ export class DiscountBuilder {
                 this.discount = new StudentDiscount();
                 return;
             }
+            
             case VIP_DISCOUNT: {
                 this.discount = new VipDiscount();
+                return;
             }
         }
     }

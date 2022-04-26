@@ -15,3 +15,9 @@
 - example: decorator/
 - usage: decorator/decorator.test.ts
 - https://tinkerbellbass.tistory.com/68
+
+
+### Factory Method Pattern
+- example: factory/
+- usage: factory/factory.test.ts
+- https://tinkerbellbass.tistory.com/69
