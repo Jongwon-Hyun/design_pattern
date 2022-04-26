@@ -14,3 +14,8 @@
 - example: src/main/java/decorator/
 - usage: src/test/java/DecoratorTest.java
 - https://tinkerbellbass.tistory.com/68
+
+### factory Method Pattern
+- example: src/main/java/decorator/
+- usage: src/test/java/DecoratorTest.java
+- https://tinkerbellbass.tistory.com/69
