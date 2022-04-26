@@ -14,3 +14,8 @@
 - example: decorator/
 - usage: decorator/decorator_test.go
 - https://tinkerbellbass.tistory.com/68
+
+### Factory Method Pattern
+- example: factory_method/
+- usage: factory/factory_method_test.go
+- https://tinkerbellbass.tistory.com/69
