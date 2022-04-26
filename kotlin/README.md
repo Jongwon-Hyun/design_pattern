@@ -20,6 +20,6 @@
 
 ### Factory Method Pattern
 
-- example: src/main/kotlin/factory/
-- usage: src/test/kotlin/FactoryTest.kt
+- example: src/main/kotlin/factory_method/
+- usage: src/test/kotlin/FactoryMethodTest.kt
 - https://tinkerbellbass.tistory.com/69
