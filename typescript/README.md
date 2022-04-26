@@ -18,6 +18,6 @@
 
 
 ### Factory Method Pattern
-- example: factory/
-- usage: factory/factory.test.ts
+- example: factory-method/
+- usage: factory/factory-method.test.ts
 - https://tinkerbellbass.tistory.com/69
