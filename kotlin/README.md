@@ -23,3 +23,9 @@
 - example: src/main/kotlin/factory_method/
 - usage: src/test/kotlin/FactoryMethodTest.kt
 - https://tinkerbellbass.tistory.com/69
+
+### Abstract Factory Pattern
+
+- example: src/main/kotlin/abstract_factory/
+- usage: src/test/kotlin/AbstractFactoryTest.kt
+- https://tinkerbellbass.tistory.com/70

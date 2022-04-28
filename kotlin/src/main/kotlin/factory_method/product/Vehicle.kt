@@ -3,7 +3,6 @@ package factory_method.product
 import factory_method.product.part.Engine
 import factory_method.product.part.Tire
 
-// TODO 추상 팩토리 패턴으로 다시 구현할 것!
 abstract class Vehicle {
 
     abstract var name: String
