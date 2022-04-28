@@ -5,7 +5,6 @@ import (
 	"fmt"
 )
 
-// TODO 추상 팩토리 패턴으로 다시 구현할 것!
 type Vehicle interface {
 	Assembly()
 	LoadShip()
@@ -53,9 +52,9 @@ type superBus struct {
 	*vehicle
 }
 
-func NewSuperBus() *superBus {
+func NewSuperBus() Vehicle {
 	superBus := &superBus{
-		&vehicle{name: SuperBusName, engine: part.EngineHybrid, tire: part.TireNormal},
+		vehicle: &vehicle{name: SuperBusName, engine: part.EngineHybrid, tire: part.TireNormal},
 	}
 	superBus.Vehicle = superBus
 	return superBus
@@ -65,9 +64,9 @@ type superTruck struct {
 	*vehicle
 }
 
-func NewSuperTruck() *superTruck {
+func NewSuperTruck() Vehicle {
 	superTruck := &superTruck{
-		&vehicle{name: SuperTruckName, engine: part.EngineGasoline, tire: part.TireOffload},
+		vehicle: &vehicle{name: SuperTruckName, engine: part.EngineGasoline, tire: part.TireOffload},
 	}
 	superTruck.Vehicle = superTruck
 	return superTruck
@@ -77,9 +76,9 @@ type ultraBus struct {
 	*vehicle
 }
 
-func NewUltraBus() *ultraBus {
+func NewUltraBus() Vehicle {
 	ultraBus := &ultraBus{
-		&vehicle{name: UltraBusName, engine: part.EngineGasoline, tire: part.TireNormal},
+		vehicle: &vehicle{name: UltraBusName, engine: part.EngineGasoline, tire: part.TireNormal},
 	}
 	ultraBus.Vehicle = ultraBus
 	return ultraBus
@@ -89,9 +88,9 @@ type ultraTruck struct {
 	*vehicle
 }
 
-func NewUltraTruck() *ultraTruck {
+func NewUltraTruck() Vehicle {
 	ultraTruck := &ultraTruck{
-		&vehicle{name: UltraTruckName, engine: part.EngineHybrid, tire: part.TireOffload},
+		vehicle: &vehicle{name: UltraTruckName, engine: part.EngineHybrid, tire: part.TireOffload},
 	}
 	ultraTruck.Vehicle = ultraTruck
 	return ultraTruck
