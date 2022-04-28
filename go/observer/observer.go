@@ -11,7 +11,7 @@ type mailSender struct {
 	name string
 }
 
-func NewMailSender() *mailSender {
+func NewMailSender() Observer {
 	return &mailSender{name: "mailSender"}
 }
 
@@ -32,7 +32,7 @@ type appAlarmSender struct {
 	name string
 }
 
-func NewAppAlarmSender() *appAlarmSender {
+func NewAppAlarmSender() Observer {
 	return &appAlarmSender{name: "appAlarmSender"}
 }
 

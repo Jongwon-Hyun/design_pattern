@@ -17,5 +17,10 @@
 
 ### Factory Method Pattern
 - example: factory_method/
-- usage: factory/factory_method_test.go
+- usage: factory_method/factory_method_test.go
 - https://tinkerbellbass.tistory.com/69
+
+### Abstract Factory Pattern
+- example: abstract_factory/
+- usage: abstract_factory/abstract_factory_test.go
+- https://tinkerbellbass.tistory.com/70

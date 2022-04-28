@@ -1,7 +1,8 @@
 package creator
 
 import (
-	"design_pattern/factory_method/product"
+	"design_pattern/abstract_factory/product"
+	"design_pattern/abstract_factory/product/part"
 	"errors"
 )
 
@@ -39,9 +40,9 @@ func NewSuperVehicleFactory() VehicleFactory {
 func (s *superVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
 	switch vehicleType {
 	case product.Bus:
-		return product.NewSuperBus(), nil
+		return product.NewSuperBus(part.NewCityVehiclePartFactory()), nil
 	case product.Truck:
-		return product.NewSuperTruck(), nil
+		return product.NewSuperTruck(part.NewOffloadVehiclePartFactory()), nil
 	default:
 		return nil, errors.New("invalid vehicle type")
 	}
@@ -60,9 +61,9 @@ func NewUltraVehicleFactory() VehicleFactory {
 func (u *ultraVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
 	switch vehicleType {
 	case product.Bus:
-		return product.NewUltraBus(), nil
+		return product.NewUltraBus(part.NewOffloadVehiclePartFactory()), nil
 	case product.Truck:
-		return product.NewUltraTruck(), nil
+		return product.NewUltraTruck(part.NewCityVehiclePartFactory()), nil
 	default:
 		return nil, errors.New("invalid vehicle type")
 	}

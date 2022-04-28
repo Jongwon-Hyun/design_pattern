@@ -15,7 +15,7 @@ type Discount interface {
 type studentDiscount struct {
 }
 
-func NewStudentDiscount() *studentDiscount {
+func NewStudentDiscount() Discount {
 	return &studentDiscount{}
 }
 
@@ -30,7 +30,7 @@ func (s *studentDiscount) history() string {
 type vipDiscount struct {
 }
 
-func NewVipDiscount() *vipDiscount {
+func NewVipDiscount() Discount {
 	return &vipDiscount{}
 }
 

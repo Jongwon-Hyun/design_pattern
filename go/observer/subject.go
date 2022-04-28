@@ -10,7 +10,7 @@ type messenger struct {
 	observerList []Observer
 }
 
-func NewMessenger() *messenger {
+func NewMessenger() Subject {
 	return &messenger{observerList: []Observer{}}
 }
 
