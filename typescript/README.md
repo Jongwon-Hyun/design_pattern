@@ -19,5 +19,10 @@
 
 ### Factory Method Pattern
 - example: factory-method/
-- usage: factory/factory-method.test.ts
+- usage: factory_method/factory-method.test.ts
 - https://tinkerbellbass.tistory.com/69
+
+### Abstract Factory Pattern
+- example: abstract_factory/
+- usage: abstract_factory/abstract_factory.test.ts
+- https://tinkerbellbass.tistory.com/70
