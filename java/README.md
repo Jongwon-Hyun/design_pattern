@@ -23,3 +23,9 @@
 - example: src/main/java/factory_method/
 - usage: src/test/java/FactoryMethodTest.java
 - https://tinkerbellbass.tistory.com/69
+
+### Abstract Factory Pattern
+
+- example: src/main/java/abstract_factory/
+- usage: src/test/java/AbstractFactoryTest.java
+- https://tinkerbellbass.tistory.com/70
