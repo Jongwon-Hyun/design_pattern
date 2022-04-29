@@ -25,4 +25,4 @@
 ### Abstract Factory Pattern
 - example: abstract_factory/
 - usage: abstract_factory/abstract_factory.test.ts
-- https://tinkerbellbass.tistory.com/70
+- https://tinkerbellbass.tistory.com/71
