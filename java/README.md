@@ -28,4 +28,4 @@
 
 - example: src/main/java/abstract_factory/
 - usage: src/test/java/AbstractFactoryTest.java
-- https://tinkerbellbass.tistory.com/70
+- https://tinkerbellbass.tistory.com/71
