@@ -28,4 +28,4 @@
 
 - example: src/main/kotlin/abstract_factory/
 - usage: src/test/kotlin/AbstractFactoryTest.kt
-- https://tinkerbellbass.tistory.com/70
+- https://tinkerbellbass.tistory.com/71
