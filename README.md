@@ -29,3 +29,9 @@
 - example: src/main/kotlin/abstract_factory/
 - usage: src/test/kotlin/AbstractFactoryTest.kt
 - https://tinkerbellbass.tistory.com/71
+
+### Singleton Pattern
+
+- example: src/main/kotlin/singleton/
+- usage: src/test/kotlin/SingletonTest.kt
+- https://tinkerbellbass.tistory.com/72
