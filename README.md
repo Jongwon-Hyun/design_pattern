@@ -28,4 +28,10 @@
 
 - example: src/main/java/abstract_factory/
 - usage: src/test/java/AbstractFactoryTest.java
-- https://tinkerbellbass.tistory.com/70
+- https://tinkerbellbass.tistory.com/71
+
+### Singleton Pattern
+
+- example: src/main/java/singleton/
+- usage: src/test/java/SingletonTest.java
+- https://tinkerbellbass.tistory.com/72
