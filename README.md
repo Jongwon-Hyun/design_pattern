@@ -24,3 +24,8 @@
 - example: abstract_factory/
 - usage: abstract_factory/abstract_factory_test.go
 - https://tinkerbellbass.tistory.com/71
+
+### Singleton Pattern
+- example: singleton/
+- usage: singleton/singleton_test.go
+- https://tinkerbellbass.tistory.com/72
