@@ -5,7 +5,7 @@ import factory_method.product.VehicleType;
 
 public abstract class VehicleFactory {
     public Vehicle orderVehicle(VehicleType vehicleType) {
-        var vehicle = createVehicle(vehicleType);
+        final var vehicle = createVehicle(vehicleType);
 
         vehicle.assembly();
         vehicle.loadShip();

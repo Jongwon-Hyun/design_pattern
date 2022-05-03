@@ -1,8 +1,12 @@
-import decorator.*;
+import decorator.DiscountBuilder;
+import decorator.DiscountType;
+import decorator.StudentDiscount;
+import decorator.VipDiscount;
 import decorator.decorator.TenOrderDiscount;
 import decorator.decorator.WelcomeDiscount;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DecoratorTest {
 
@@ -18,7 +22,7 @@ public class DecoratorTest {
         assertEquals(StudentDiscount.HISTORY, studentHistory);
 
 
-        var vip = new DiscountBuilder.Builder(DiscountType.VIP).build();
+        final var vip = new DiscountBuilder.Builder(DiscountType.VIP).build();
         final var vipDiscount = vip.getDiscount();
         final var vipAmount = vipDiscount.amountAfterDiscount(amount);
         final var vipHistory = vipDiscount.history();
@@ -26,7 +30,7 @@ public class DecoratorTest {
         assertEquals(VipDiscount.HISTORY, vipHistory);
 
 
-        var studentWithWelcome = new DiscountBuilder.Builder(DiscountType.STUDENT)
+        final var studentWithWelcome = new DiscountBuilder.Builder(DiscountType.STUDENT)
                 .welcomeDiscount()
                 .build();
         final var studentWithWelcomeDiscount = studentWithWelcome.getDiscount();
@@ -36,7 +40,7 @@ public class DecoratorTest {
         assertEquals(StudentDiscount.HISTORY + " " + WelcomeDiscount.HISTORY, studentWithWelcomeHistory);
 
 
-        var studentWithWelcomeAndTenOrder = new DiscountBuilder.Builder(DiscountType.STUDENT)
+        final var studentWithWelcomeAndTenOrder = new DiscountBuilder.Builder(DiscountType.STUDENT)
                 .welcomeDiscount()
                 .tenOrderDiscount()
                 .build();
@@ -49,7 +53,7 @@ public class DecoratorTest {
                 studentWithWelcomeAndTenOrderHistory);
 
 
-        var vipWithTenOrder = new DiscountBuilder.Builder(DiscountType.VIP)
+        final var vipWithTenOrder = new DiscountBuilder.Builder(DiscountType.VIP)
                 .tenOrderDiscount()
                 .build();
         final var vipWithTenOrderDiscount = vipWithTenOrder.getDiscount();
@@ -59,7 +63,7 @@ public class DecoratorTest {
         assertEquals(VipDiscount.HISTORY + " " + TenOrderDiscount.HISTORY, vipWithTenOrderHistory);
 
 
-        var vipWithTenOrderAndWelcome = new DiscountBuilder.Builder(DiscountType.VIP)
+        final var vipWithTenOrderAndWelcome = new DiscountBuilder.Builder(DiscountType.VIP)
                 .tenOrderDiscount()
                 .welcomeDiscount()
                 .build();
