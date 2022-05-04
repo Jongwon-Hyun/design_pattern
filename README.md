@@ -35,3 +35,9 @@
 - example: src/main/kotlin/singleton/
 - usage: src/test/kotlin/SingletonTest.kt
 - https://tinkerbellbass.tistory.com/72
+
+### Command Pattern
+
+- example: src/main/kotlin/command/
+- usage: src/test/kotlin/CommandTest.kt
+- https://tinkerbellbass.tistory.com/74
