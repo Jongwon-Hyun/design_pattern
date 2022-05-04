@@ -31,3 +31,8 @@
 - example: singleton/
 - usage: singleton/singleton.test.ts
 - https://tinkerbellbass.tistory.com/72
+
+### Command Pattern
+- example: command/
+- usage: command/command.test.ts
+- https://tinkerbellbass.tistory.com/74
