@@ -14,7 +14,7 @@ type vehicleFactory struct {
 	VehicleFactory
 }
 
-func (v *vehicleFactory) OrderVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
+func (v vehicleFactory) OrderVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
 	vehicle, err := v.VehicleFactory.createVehicle(vehicleType)
 	if err != nil {
 		return nil, err
@@ -36,11 +36,11 @@ func NewSuperVehicleFactory() VehicleFactory {
 	return superVehicleFactory
 }
 
-func (s *superVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
-	switch vehicleType {
-	case product.Bus:
+func (s superVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
+	switch vehicleType.String() {
+	case product.Bus.String():
 		return product.NewSuperBus(), nil
-	case product.Truck:
+	case product.Truck.String():
 		return product.NewSuperTruck(), nil
 	default:
 		return nil, errors.New("invalid vehicle type")
@@ -57,11 +57,11 @@ func NewUltraVehicleFactory() VehicleFactory {
 	return ultraVehicleFactory
 }
 
-func (u *ultraVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
-	switch vehicleType {
-	case product.Bus:
+func (u ultraVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
+	switch vehicleType.String() {
+	case product.Bus.String():
 		return product.NewUltraBus(), nil
-	case product.Truck:
+	case product.Truck.String():
 		return product.NewUltraTruck(), nil
 	default:
 		return nil, errors.New("invalid vehicle type")

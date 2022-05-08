@@ -20,24 +20,24 @@ type vehicle struct {
 	Vehicle
 }
 
-func (v *vehicle) Assembly() {
+func (v vehicle) Assembly() {
 	fmt.Println(v.engine.String() + " 엔진을 장착")
 	fmt.Println(v.tire.String() + " 타이어를 장착")
 }
 
-func (v *vehicle) LoadShip() {
+func (v vehicle) LoadShip() {
 	fmt.Println("베에 선적")
 }
 
-func (v *vehicle) GetEngine() part.Engine {
+func (v vehicle) GetEngine() part.Engine {
 	return v.engine
 }
 
-func (v *vehicle) GetTire() part.Tire {
+func (v vehicle) GetTire() part.Tire {
 	return v.tire
 }
 
-func (v *vehicle) GetName() string {
+func (v vehicle) GetName() string {
 	return v.name
 }
 

@@ -38,10 +38,10 @@ func NewSuperVehicleFactory() VehicleFactory {
 }
 
 func (s *superVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
-	switch vehicleType {
-	case product.Bus:
+	switch vehicleType.String() {
+	case product.Bus.String():
 		return product.NewSuperBus(part.NewCityVehiclePartFactory()), nil
-	case product.Truck:
+	case product.Truck.String():
 		return product.NewSuperTruck(part.NewOffloadVehiclePartFactory()), nil
 	default:
 		return nil, errors.New("invalid vehicle type")
@@ -59,10 +59,10 @@ func NewUltraVehicleFactory() VehicleFactory {
 }
 
 func (u *ultraVehicleFactory) createVehicle(vehicleType product.VehicleType) (product.Vehicle, error) {
-	switch vehicleType {
-	case product.Bus:
+	switch vehicleType.String() {
+	case product.Bus.String():
 		return product.NewUltraBus(part.NewOffloadVehiclePartFactory()), nil
-	case product.Truck:
+	case product.Truck.String():
 		return product.NewUltraTruck(part.NewCityVehiclePartFactory()), nil
 	default:
 		return nil, errors.New("invalid vehicle type")

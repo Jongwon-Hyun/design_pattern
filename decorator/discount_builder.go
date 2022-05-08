@@ -25,6 +25,6 @@ func (d *DiscountBuilder) TenOrderDiscount() *DiscountBuilder {
 	return d
 }
 
-func (d *DiscountBuilder) GetDiscount() Discount {
+func (d DiscountBuilder) GetDiscount() Discount {
 	return d.discount
 }

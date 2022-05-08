@@ -19,11 +19,11 @@ func NewStudentDiscount() Discount {
 	return &studentDiscount{}
 }
 
-func (s *studentDiscount) amountAfterDiscount(amount float64) float64 {
+func (s studentDiscount) amountAfterDiscount(amount float64) float64 {
 	return amount * StudentDiscountRate
 }
 
-func (s *studentDiscount) history() string {
+func (s studentDiscount) history() string {
 	return StudentDiscountHistory
 }
 
@@ -34,10 +34,10 @@ func NewVipDiscount() Discount {
 	return &vipDiscount{}
 }
 
-func (v *vipDiscount) amountAfterDiscount(amount float64) float64 {
+func (v vipDiscount) amountAfterDiscount(amount float64) float64 {
 	return amount * VipDiscountRate
 }
 
-func (v *vipDiscount) history() string {
+func (v vipDiscount) history() string {
 	return VipDiscountHistory
 }

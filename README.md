@@ -34,3 +34,8 @@
 - example: command/
 - usage: command/command_test.go
 - https://tinkerbellbass.tistory.com/74
+
+### Adapter Pattern
+- example: adapter/
+- usage: adapter/adapter_test.go
+- https://tinkerbellbass.tistory.com/75

@@ -7,11 +7,11 @@ type remit struct {
 	createTransferMessage func() string
 }
 
-func (r *remit) CalculateAmount(amount float64) float64 {
+func (r remit) CalculateAmount(amount float64) float64 {
 	return amount + r.calculateFee(amount)
 }
 
-func (r *remit) calculateFee(amount float64) float64 {
+func (r remit) calculateFee(amount float64) float64 {
 	return r.fee.Calculate(amount)
 }
 

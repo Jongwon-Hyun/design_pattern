@@ -8,7 +8,7 @@ func NewTransfer(command func(transferParam TransferParam)) *transfer {
 	return &transfer{command: command}
 }
 
-func (t *transfer) Start(transferParam TransferParam) {
+func (t transfer) Start(transferParam TransferParam) {
 	t.command(transferParam)
 }
 
