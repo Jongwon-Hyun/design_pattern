@@ -6,24 +6,24 @@ export abstract class Vehicle {
     protected engine: Engine
     protected tire: Tire;
 
-    public assembly() {
+    assembly() {
         console.log(`${this.engine} 엔진을 장착`);
         console.log(`${this.tire} 타이어를 장착`);
     }
 
-    public loadShip() {
+    loadShip() {
         console.log("배에 선적");
     };
 
-    public getEngine(): Engine {
+    getEngine(): Engine {
         return this.engine;
     }
 
-    public getTire(): Tire {
+    getTire(): Tire {
         return this.tire;
     }
 
-    public getName(): string {
-        return this.name
+    getName(): string {
+        return this.name;
     }
 }

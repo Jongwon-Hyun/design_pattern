@@ -1,7 +1,7 @@
 import { TransferParam } from "../transfer_param";
 
 export class XyzBank {
-    public transfer(transferParam: TransferParam) {
+    transfer(transferParam: TransferParam) {
         console.log('XyzBank 이체 시작');
 
         const fee = this.calculateFee(transferParam?.amount);

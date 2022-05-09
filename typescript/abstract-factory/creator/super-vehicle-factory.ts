@@ -9,13 +9,9 @@ import { VehicleFactory } from "./vehicle-factory";
 export class SuperVehicleFactory extends VehicleFactory {
     protected createVehicle(vehicleType: VehicleType): Vehicle {
         switch(vehicleType) {
-            case BUS: {
-                return new SuperBus(new CityVehicleFactory());
-            }
+            case BUS: return new SuperBus(new CityVehicleFactory());
+            case TRUCK: return new SuperTruck(new OffloadVehicleFactory());
             
-            case TRUCK: {
-                return new SuperTruck(new OffloadVehicleFactory());
-            }
         }
     }
 }

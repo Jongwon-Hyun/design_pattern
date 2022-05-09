@@ -3,7 +3,7 @@ export class Singleton {
 
     private constructor() {} 
 
-    public static getInstance() { 
+    static getInstance() { 
         if (!Singleton.INSTANCE) { 
             Singleton.INSTANCE = new Singleton(); 
         } 

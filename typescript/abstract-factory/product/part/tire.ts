@@ -1,7 +1,7 @@
 const tire = {
     normal: 'normal',
     offload: 'offload',
-} as const;
+} as const
 
 type Tire = typeof tire[keyof typeof tire];
 const NORMAL_TIRE = tire.normal;

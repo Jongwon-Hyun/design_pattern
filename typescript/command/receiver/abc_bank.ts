@@ -1,14 +1,14 @@
 import { TransferParam } from "../transfer_param";
 
 export class AbcBank {
-    public transfer(transferParam: TransferParam) {
+    transfer(transferParam: TransferParam) {
         console.log('AbcBank 이체 시작');
 
         if (!this.confrimAccount(transferParam?.account)) {
-            throw new Error('계좌 변호를 확인해 주세요.')
+            throw new Error('계좌 변호를 확인해 주세요.');
         }
 
-        const transactionID = this.generateTransactionID()
+        const transactionID = this.generateTransactionID();
 
         console.log(
             `${transferParam?.amount} 원을 이체 하였습니다. 거래 내역은 ${transactionID} 로 확인해 주세요.`);

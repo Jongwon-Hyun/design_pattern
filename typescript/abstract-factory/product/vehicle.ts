@@ -8,25 +8,25 @@ export abstract class Vehicle {
     protected tire: Tire;
     protected options: Array<Option>;
 
-    public abstract assembly();
+    abstract assembly(): void;
 
-    public loadShip() {
+    loadShip() {
         console.log("배에 선적");
     };
 
-    public getEngine(): Engine {
+    getEngine(): Engine {
         return this.engine;
     }
 
-    public getTire(): Tire {
+    getTire(): Tire {
         return this.tire;
     }
 
-    public getOptions(): Array<Option> {
+    getOptions(): Array<Option> {
         return this.options;
     }
 
-    public getName(): string {
+    getName(): string {
         return this.name
     }
 }

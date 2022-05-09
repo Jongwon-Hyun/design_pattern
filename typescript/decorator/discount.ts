@@ -1,4 +1,4 @@
 export interface Discount {
-    amountAfterDiscount(amount: number): number;
-    history(): string;
+    amountAfterDiscount(amount: number): number
+    history(): string
 }

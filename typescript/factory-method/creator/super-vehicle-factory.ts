@@ -7,13 +7,8 @@ import { VehicleFactory } from "./vehicle-factory";
 export class SuperVehicleFactory extends VehicleFactory {
     protected createVehicle(vehicleType: VehicleType): Vehicle {
         switch(vehicleType) {
-            case BUS: {
-                return new SuperBus();
-            }
-            
-            case TRUCK: {
-                return new SuperTruck();
-            }
+            case BUS: return new SuperBus();
+            case TRUCK: return new SuperTruck();
         }
     }
 }
