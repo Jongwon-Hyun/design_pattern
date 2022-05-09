@@ -41,3 +41,9 @@
 - example: src/main/kotlin/command/
 - usage: src/test/kotlin/CommandTest.kt
 - https://tinkerbellbass.tistory.com/74
+
+### Adapter Pattern
+
+- example: src/main/kotlin/adapter/
+- usage: src/test/kotlin/AdapterTest.kt
+- https://tinkerbellbass.tistory.com/75
