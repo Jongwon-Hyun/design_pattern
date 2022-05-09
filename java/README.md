@@ -41,3 +41,9 @@
 - example: src/main/java/command/
 - usage: src/test/java/CommandTest.java
 - https://tinkerbellbass.tistory.com/74
+
+### Adapter Pattern
+
+- example: src/main/java/adapter/
+- usage: src/test/java/AdapterTest.java
+- https://tinkerbellbass.tistory.com/75
