@@ -36,3 +36,8 @@
 - example: command/
 - usage: command/command.test.ts
 - https://tinkerbellbass.tistory.com/74
+
+### Adapter Pattern
+- example: adapter/
+- usage: adapter/adapter.test.ts
+- https://tinkerbellbass.tistory.com/75
