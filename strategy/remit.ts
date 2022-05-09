@@ -5,7 +5,7 @@ export abstract class Remit {
 
     abstract createTransferMessage(): string;
 
-    public caculateAmount(amount: number): number {
+    caculateAmount(amount: number): number {
         const a = this.calculateFee(amount);
         return amount + this.calculateFee(amount);
     }

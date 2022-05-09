@@ -1,7 +1,7 @@
 const discountType = {
     student: 'student',
     vip: 'vip',
-} as const;
+} as const
 
 type DiscountType = typeof discountType[keyof typeof discountType];
 const STUDENT_DISCOUNT = discountType.student;

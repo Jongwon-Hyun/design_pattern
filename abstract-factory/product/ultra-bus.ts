@@ -9,7 +9,7 @@ export class UltraBus extends Vehicle {
         this.name = UltraBus.NAME;
     }
 
-    public assembly() {
+    assembly() {
         this.engine = this.vehiclePartFactory.createEngine();
         this.tire = this.vehiclePartFactory.createTire();
         this.options = this.vehiclePartFactory.createOptions();

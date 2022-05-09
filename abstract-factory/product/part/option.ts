@@ -2,7 +2,7 @@ const option = {
     navigation: 'navigation',
     audioSystem: 'audio_system',
     cruiseContorl: 'cruise_control'
-} as const;
+} as const
 
 type Option = typeof option[keyof typeof option];
 const NAVIGATION_OPTION = option.navigation;

@@ -9,13 +9,8 @@ import { VehicleFactory } from "./vehicle-factory";
 export class UltraVehicleFactory extends VehicleFactory {
     protected createVehicle(vehicleType: VehicleType): Vehicle {
         switch(vehicleType) {
-            case BUS: {
-                return new UltraBus(new OffloadVehicleFactory());
-            }
-            
-            case TRUCK: {
-                return new UltraTruck(new CityVehicleFactory());
-            }
+            case BUS: return new UltraBus(new OffloadVehicleFactory());
+            case TRUCK: return new UltraTruck(new CityVehicleFactory());
         }
     }
 }

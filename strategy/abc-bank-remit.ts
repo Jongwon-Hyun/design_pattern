@@ -6,7 +6,7 @@ export class AbcBankRemit extends Remit {
         super(fee);
     }
 
-    public createTransferMessage(): string {
+    createTransferMessage(): string {
         return "Hey Abc Bank! I will give you money! OK?";
     }
 }
