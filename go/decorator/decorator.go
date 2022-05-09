@@ -15,11 +15,11 @@ func NewWelcomeDiscount(discount Discount) *welcomeDiscount {
 	return &welcomeDiscount{discount: discount}
 }
 
-func (w *welcomeDiscount) amountAfterDiscount(amount float64) float64 {
+func (w welcomeDiscount) amountAfterDiscount(amount float64) float64 {
 	return w.discount.amountAfterDiscount(amount) * WelcomeDiscountRate
 }
 
-func (w *welcomeDiscount) history() string {
+func (w welcomeDiscount) history() string {
 	return w.discount.history() + " " + WelcomeDiscountHistory
 }
 
@@ -31,10 +31,10 @@ func NewTenOrderDiscount(discount Discount) *tenOrderDiscount {
 	return &tenOrderDiscount{discount: discount}
 }
 
-func (t *tenOrderDiscount) amountAfterDiscount(amount float64) float64 {
+func (t tenOrderDiscount) amountAfterDiscount(amount float64) float64 {
 	return t.discount.amountAfterDiscount(amount) * TenOrderDiscountRate
 }
 
-func (t *tenOrderDiscount) history() string {
+func (t tenOrderDiscount) history() string {
 	return t.discount.history() + " " + TenOrderDiscountHistory
 }

@@ -17,7 +17,7 @@ func NewDefaultFee() Fee {
 	return &defaultFee{fee: DefaultFee}
 }
 
-func (d *defaultFee) Calculate(amount float64) float64 {
+func (d defaultFee) Calculate(amount float64) float64 {
 	return amount * d.fee
 }
 
@@ -29,6 +29,6 @@ func NewPartnershipFee() Fee {
 	return &partnershipFee{fee: PartnershipFee}
 }
 
-func (p *partnershipFee) Calculate(amount float64) float64 {
+func (p partnershipFee) Calculate(amount float64) float64 {
 	return amount * p.fee
 }

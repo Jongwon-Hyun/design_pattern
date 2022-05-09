@@ -11,7 +11,7 @@ func NewAbcBank() *abcBank {
 	return &abcBank{}
 }
 
-func (a *abcBank) Transfer(transferParam TransferParam) error {
+func (a abcBank) Transfer(transferParam TransferParam) error {
 	fmt.Println("AbcBank 이체 시작")
 
 	if !a.confirmAccount(transferParam.account) {
@@ -27,12 +27,12 @@ func (a *abcBank) Transfer(transferParam TransferParam) error {
 	return nil
 }
 
-func (a *abcBank) confirmAccount(account string) bool {
+func (a abcBank) confirmAccount(account string) bool {
 	fmt.Printf("%s 계좌를 확인했습니다.\n", account)
 	return true
 }
 
-func (a *abcBank) generateTransactionID() string {
+func (a abcBank) generateTransactionID() string {
 	return "1234567890"
 }
 
@@ -42,7 +42,7 @@ func NewXyzBank() *xyzBank {
 	return &xyzBank{}
 }
 
-func (x *xyzBank) Transfer(transferParam TransferParam) {
+func (x xyzBank) Transfer(transferParam TransferParam) {
 	fmt.Println("XyzBank 이체 시작")
 
 	fee := x.calculateFee(transferParam.amount)
@@ -53,6 +53,6 @@ func (x *xyzBank) Transfer(transferParam TransferParam) {
 	fmt.Println("XyzBank 이체 종료")
 }
 
-func (x *xyzBank) calculateFee(amount float64) float64 {
+func (x xyzBank) calculateFee(amount float64) float64 {
 	return amount * 0.02
 }

@@ -30,7 +30,7 @@ func (m *messenger) Unsubscribe(observer Observer) {
 	m.observerList = append(m.observerList[:index], m.observerList[index+1:]...)
 }
 
-func (m *messenger) Publish(message string) {
+func (m messenger) Publish(message string) {
 	for _, o := range m.observerList {
 		o.Update(message)
 	}
