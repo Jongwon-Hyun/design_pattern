@@ -6,7 +6,7 @@ import strategy.fee.DefaultFee
 import strategy.fee.PartnershipFee
 
 class StrategyTest : FunSpec({
-    test("strategy run") {
+    test("Test Strategy") {
         val amount = 1000.0
         val defaultFee = amount * DefaultFee.FEE
         val partnershipFee = amount * PartnershipFee.FEE

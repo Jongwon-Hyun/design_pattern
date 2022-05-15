@@ -6,7 +6,7 @@ import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
 class AdapterTest : FunSpec({
-    test("Adapter Run") {
+    test("Test Adapter") {
         val exchangeRateV1 = ExchangeRateV1Repository()
         val exchangeRateV2 = ExchangeRateV2Repository()
         val exchangeRateV1Adapter = ExchangeRateV1Adapter(exchangeRateV1)

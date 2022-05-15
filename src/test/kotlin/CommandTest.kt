@@ -6,7 +6,7 @@ import io.kotest.core.spec.style.FunSpec
 import java.util.*
 
 class CommandTest : FunSpec({
-    test("Command Run") {
+    test("Test Command") {
         val queue: Queue<Transfer> = LinkedList()
 
         val abcBank = AbcBank()

@@ -47,3 +47,9 @@
 - example: src/main/kotlin/adapter/
 - usage: src/test/kotlin/AdapterTest.kt
 - https://tinkerbellbass.tistory.com/75
+
+### Facade Pattern
+
+- example: src/main/kotlin/facade/
+- usage: src/test/kotlin/FacadeTest.kt
+- https://tinkerbellbass.tistory.com/77
