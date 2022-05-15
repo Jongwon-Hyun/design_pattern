@@ -5,14 +5,15 @@ import strategy.Remit;
 import strategy.fee.DefaultFee;
 import strategy.fee.Fee;
 import strategy.fee.PartnershipFee;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StrategyTest {
 
     @Test
-    void strategyRun() {
+    void testStrategy() {
         final var amount = 1000;
-        final var defaultFee =  amount * Fee.DEFAULT_FEE;
+        final var defaultFee = amount * Fee.DEFAULT_FEE;
         final var partnershipFee = amount * Fee.PARTNERSHIP_FEE;
 
         final Remit abcBankRemit = new AbcBankRemit(new DefaultFee());

@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 public class AbstractFactoryTest {
     @Test
-    void testFactoryMethod() {
+    void testAbstractFactory() {
         final var superVehicleFactory = new SuperVehicleFactory();
         final var ultraVehicleFactory = new UltraVehicleFactory();
 

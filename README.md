@@ -47,3 +47,9 @@
 - example: src/main/java/adapter/
 - usage: src/test/java/AdapterTest.java
 - https://tinkerbellbass.tistory.com/75
+
+### Facade Pattern
+
+- example: src/main/java/facade/
+- usage: src/test/java/FacadeTest.java
+- https://tinkerbellbass.tistory.com/77

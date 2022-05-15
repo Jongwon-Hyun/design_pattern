@@ -5,18 +5,18 @@ import org.junit.jupiter.api.Test;
 
 public class ObserverTest {
     @Test
-    void observerRun() {
-       final var messenger = new Messenger();
-       final var mailSender = new MailSender();
-       final var appAlarmSender = new AppAlarmSender();
+    void testObserver() {
+        final var messenger = new Messenger();
+        final var mailSender = new MailSender();
+        final var appAlarmSender = new AppAlarmSender();
 
-       messenger.subscribe(mailSender);
-       messenger.subscribe(appAlarmSender);
+        messenger.subscribe(mailSender);
+        messenger.subscribe(appAlarmSender);
 
-       messenger.publish("Show me the Money!!");
+        messenger.publish("Show me the Money!!");
 
-       messenger.unsubscribe(appAlarmSender);
+        messenger.unsubscribe(appAlarmSender);
 
-       messenger.publish("Give me the Money!");
+        messenger.publish("Give me the Money!");
     }
 }
