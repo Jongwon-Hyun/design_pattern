@@ -3,7 +3,7 @@ import { DefBankRemit } from "./def-bank-remit";
 import { DefaultFee } from "./fee/default-fee";
 import { PartnershipFee } from "./fee/partnership-fee";
 
-test('Strategy Run', () => {
+test('Test Strategy', () => {
     const amount = 10000;
     const defaultFee = amount * DefaultFee.FEE;
     const partnershipFee = amount * PartnershipFee.FEE;

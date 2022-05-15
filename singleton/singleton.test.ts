@@ -1,6 +1,6 @@
 import { Singleton } from "./singleton";
 
-test("Singleton Run", () => {
+test("Test Singleton", () => {
     const instanceA = Singleton.getInstance();
     const instanceB = Singleton.getInstance();
 
