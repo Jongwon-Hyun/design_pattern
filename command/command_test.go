@@ -3,7 +3,7 @@ package command
 import "testing"
 
 func TestCommand(t *testing.T) {
-	t.Run("Command Run", func(t *testing.T) {
+	t.Run("Test Command", func(t *testing.T) {
 		ch := make(chan *transfer, 2)
 
 		abcBank := NewAbcBank()

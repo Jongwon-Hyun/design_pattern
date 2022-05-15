@@ -6,7 +6,7 @@ import (
 )
 
 func TestAdapter(t *testing.T) {
-	t.Run("Adapter Run", func(t *testing.T) {
+	t.Run("Test Adapter", func(t *testing.T) {
 		exchangeRateV1 := NewExchangeRateV1Repository()
 		exchangeRateV2 := NewExchangeRateV2Repository()
 		exchangeRateV1Adapter := NewExchangeRateV1Adapter(exchangeRateV1)

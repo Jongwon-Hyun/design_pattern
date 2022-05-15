@@ -9,7 +9,7 @@ import (
 )
 
 func TestFactoryMethod(t *testing.T) {
-	t.Run("Factory Method Run", func(t *testing.T) {
+	t.Run("Test Factory Method", func(t *testing.T) {
 		superVehicleFactory := creator.NewSuperVehicleFactory()
 		ultraVehicleFactory := creator.NewUltraVehicleFactory()
 

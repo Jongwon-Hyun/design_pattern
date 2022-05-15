@@ -6,7 +6,7 @@ import (
 )
 
 func TestSingleton(t *testing.T) {
-	t.Run("Singleton Run", func(t *testing.T) {
+	t.Run("Test Singleton", func(t *testing.T) {
 		instanceA := GetInstance()
 		instanceB := GetInstance()
 
