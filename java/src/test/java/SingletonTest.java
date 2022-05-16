@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class SingletonTest {
     @Test
-    void singletonTest() {
+    void testSingleton() {
         final var instanceA = Singleton.getInstance();
         final var instanceB = Singleton.getInstance();
 

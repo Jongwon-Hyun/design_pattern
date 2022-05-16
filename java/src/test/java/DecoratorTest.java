@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class DecoratorTest {
 
     @Test
-    void DecoratorRun() {
+    void testDecorator() {
         final var amount = 1000;
 
         final var student = new DiscountBuilder.Builder(DiscountType.STUDENT).build();
