@@ -9,7 +9,7 @@ import io.kotest.matchers.shouldBe
 
 
 class DecoratorTest : FunSpec({
-    test("Decorator Run") {
+    test("Test Decorator") {
         val amount = 1000.0
 
         val student = DiscountBuilder(DiscountType.STUDENT)

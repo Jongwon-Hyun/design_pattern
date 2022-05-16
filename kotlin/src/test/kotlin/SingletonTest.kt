@@ -4,7 +4,7 @@ import io.kotest.matchers.types.shouldBeSameInstanceAs
 import singleton.Singleton
 
 class SingletonTest : FunSpec({
-    test("Singleton Run") {
+    test("Test Singleton") {
         val instanceA = Singleton
         val instanceB = Singleton
 

@@ -10,7 +10,7 @@ import io.kotest.matchers.collections.shouldContainAll
 import io.kotest.matchers.shouldBe
 
 class AbstractFactoryTest : FunSpec({
-    test("Abstract Factory Run") {
+    test("Test Abstract Factory") {
         val superVehicleFactory = SuperVehicleFactory()
         val ultraVehicleFactory = UltraVehicleFactory()
 

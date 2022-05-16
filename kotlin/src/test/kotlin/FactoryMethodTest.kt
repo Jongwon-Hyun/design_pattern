@@ -7,7 +7,7 @@ import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
 class FactoryMethodTest : FunSpec({
-    test("Factory Method Run") {
+    test("Test Factory Method") {
         val superVehicleFactory = SuperVehicleFactory()
         val ultraVehicleFactory = UltraVehicleFactory()
 
