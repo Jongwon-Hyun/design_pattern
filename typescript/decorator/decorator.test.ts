@@ -5,7 +5,7 @@ import { STUDENT_DISCOUNT, VIP_DISCOUNT } from "./discount-type";
 import { StudentDiscount } from "./student-discount";
 import { VipDiscount } from "./vip-discount";
 
-test('Decorator run', () => {
+test('Test Decorator', () => {
     const amount = 1000;
 
     const student = new DiscountBuilder(STUDENT_DISCOUNT);

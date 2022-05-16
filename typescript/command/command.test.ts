@@ -2,7 +2,7 @@ import { AbcBank } from "./receiver/abc_bank";
 import { XyzBank } from "./receiver/xyz_bank";
 import { Transfer } from "./transfer";
 
-test('Command Run', () => {
+test('Test Command', () => {
     const arrayLikeQueue = new Array<Transfer>();
 
     const abcBank = new AbcBank();

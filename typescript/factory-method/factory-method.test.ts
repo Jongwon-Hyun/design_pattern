@@ -8,7 +8,7 @@ import { UltraBus } from "./product/ultra-bus";
 import { UltraTruck } from "./product/ultra-truck";
 import { BUS, TRUCK } from "./product/vehicle-type";
 
-test('Factory Method Run', () => {
+test('Test Factory Method', () => {
     const superVehicleFactory = new SuperVehicleFactory();
     const ultraVehicleFactory = new UltraVehicleFactory();
 

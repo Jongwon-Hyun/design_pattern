@@ -3,7 +3,7 @@ import { ExchangeRateV1Adapter } from "./exchange-rate-v1-adapter";
 import { ExchangeRateV1Repository } from "./repository/exchange-rate-v1-repository";
 import { ExchangeRateV2Repository } from "./repository/exchange-rate-v2-repository";
 
-test('Adapter Run', () => {
+test('Test Adapter', () => {
     const exchangeRateV1 = new ExchangeRateV1Repository();
     const exchangeRateV2 = new ExchangeRateV2Repository();
     const exchangeRateV1Adapter = new ExchangeRateV1Adapter(exchangeRateV1);

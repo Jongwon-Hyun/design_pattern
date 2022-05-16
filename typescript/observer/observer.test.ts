@@ -2,7 +2,7 @@ import { Messenger } from "./messenger";
 import { AppAlarmSender } from "./sender/app-alarm-sender";
 import { MailSender } from "./sender/mail-sender";
 
-test('Observer Run', () => {
+test('Test Observer', () => {
     const messenger = new Messenger();
     const mailSender = new MailSender();
     const appAlarmSender = new AppAlarmSender();
