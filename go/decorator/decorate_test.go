@@ -6,7 +6,7 @@ import (
 )
 
 func TestDecorate(t *testing.T) {
-	t.Run("Decorate run", func(t *testing.T) {
+	t.Run("Test Decorate", func(t *testing.T) {
 		var amount float64 = 1000
 
 		student := NewDiscountBuilder(StudentDiscount)

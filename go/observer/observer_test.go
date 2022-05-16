@@ -6,7 +6,7 @@ import (
 )
 
 func TestObserver(t *testing.T) {
-	t.Run("Observer run", func(t *testing.T) {
+	t.Run("Test Observer", func(t *testing.T) {
 		messenger := observer.NewMessenger()
 		mailSender := observer.NewMailSender()
 		appAlarmSender := observer.NewAppAlarmSender()

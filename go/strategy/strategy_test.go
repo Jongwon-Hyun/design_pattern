@@ -8,7 +8,7 @@ import (
 )
 
 func TestStrategy(t *testing.T) {
-	t.Run("Strategy run", func(t *testing.T) {
+	t.Run("Test Strategy", func(t *testing.T) {
 		var amount float64 = 1000
 		defaultFee := amount * fee.DefaultFee
 		partnershipFee := amount * fee.PartnershipFee
