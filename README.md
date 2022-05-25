@@ -53,3 +53,9 @@
 - example: src/main/java/facade/
 - usage: src/test/java/FacadeTest.java
 - https://tinkerbellbass.tistory.com/77
+
+### Template Method Pattern
+
+- example: src/main/java/template_method/
+- usage: src/test/java/TemplateMethodTest.java
+- https://tinkerbellbass.tistory.com/80
