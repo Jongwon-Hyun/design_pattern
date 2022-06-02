@@ -44,3 +44,8 @@
 - example: facade/
 - usage: facade/facade_test.go
 - https://tinkerbellbass.tistory.com/77
+
+### Template Method Pattern
+- example: template_method/
+- usage: facade/template_method_test.go
+- https://tinkerbellbass.tistory.com/80
