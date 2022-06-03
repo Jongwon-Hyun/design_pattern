@@ -46,3 +46,9 @@
 - example: facade/
 - usage: facade/facade.test.ts
 - https://tinkerbellbass.tistory.com/77
+
+### Template Method Pattern
+- example: tempalte-method/
+- usage: facade/template-method.test.ts
+- https://tinkerbellbass.tistory.com/80
+
