@@ -53,3 +53,9 @@
 - example: src/main/kotlin/facade/
 - usage: src/test/kotlin/FacadeTest.kt
 - https://tinkerbellbass.tistory.com/77
+
+### Template Method Pattern
+
+- example: src/main/kotlin/template_method/
+- usage: src/test/kotlin/TemplateMethodTest.kt
+- https://tinkerbellbass.tistory.com/80

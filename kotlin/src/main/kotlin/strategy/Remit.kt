@@ -3,7 +3,7 @@ package strategy
 import strategy.fee.Fee
 
 abstract class Remit(private val fee: Fee) {
-    abstract fun createTransferMessage(): String
+    protected abstract fun createTransferMessage(): String
 
     fun calculateAmount(amount: Double): Double {
         return amount + calculateFee(amount)
